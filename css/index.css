@@ -1,0 +1,66 @@
+body{
+margin:10px 260px 10px 150px;
+font-size:1.2em;
+}
+ul>li{
+list-style-type:none;
+
+}
+ul>li:hover{
+background-color:orange;
+border-radius:20px;
+color:white;
+}
+
+ol>li:hover{
+background-color:orange;
+border-radius:10px;
+color:white;
+}
+li>li:hover{
+
+background-color:orange;
+border-radius:20px;
+color:white;
+}
+a{
+text-decoration:none;
+}
+header{
+background-color:blue;
+padding:0px 0px 0px 0px;
+color:yellow;
+}
+nav{
+border:5px solid blue;
+right:0px;
+position:fixed;
+top:48px;
+width:250px;
+height:300px
+background-color:yellow;
+color:blue;
+float:right;
+transition: all .5s ease-in-out;  
+border-radius:25px;
+display:none;
+
+}
+
+#agentPhoto{
+display:block;
+padding:0px 70px 0px 70px;
+clip-path: ellipse(95px 55px at 165px 50px);
+
+}
+/*
+clip:rect(0px, 50px, 50px, 0px);
+clip-path:circle(70% at 70% 20%);
+*/
+#x{
+right:0px; 
+top:44px;
+border-radius:50px;
+background-color:yellow;
+
+}
