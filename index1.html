@@ -1,0 +1,421 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>
+Your Personal Insurance Advisor
+
+</title>
+ <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+margin:10px 260px 10px 150px;
+font-size:1.2em;
+}
+ul>li{
+list-style-type:none;
+
+}
+ul>li:hover{
+background-color:orange;
+border-radius:20px;
+color:white;
+}
+
+ol>li:hover{
+background-color:orange;
+border-radius:10px;
+color:white;
+}
+li>li:hover{
+
+background-color:orange;
+border-radius:20px;
+color:white;
+}
+a{
+text-decoration:none;
+}
+header{
+background-color:blue;
+padding:0px 0px 0px 0px;
+color:yellow;
+}
+nav{
+border:5px solid blue;
+right:0px;
+position:fixed;
+top:48px;
+width:250px;
+height:300px
+background-color:yellow;
+color:blue;
+float:right;
+transition: all .5s ease-in-out;  
+border-radius:25px;
+display:none;
+
+}
+
+#agentPhoto{
+display:block;
+padding:0px 70px 0px 70px;
+clip-path: ellipse(95px 55px at 165px 50px);
+
+}
+/*
+clip:rect(0px, 50px, 50px, 0px);
+clip-path:circle(70% at 70% 20%);
+*/
+#x{
+right:0px; 
+top:44px;
+border-radius:50px;
+background-color:yellow;
+
+}
+
+</style> 
+</head>
+<body>
+
+<script>
+function dotToNav(){
+document.getElementById("movableNav").style.display="block";
+//document.getElementById("x").style.right="0px";
+document.getElementById("dot0").style.display="none";
+}
+function navToDot(){
+document.getElementById("dot0").style.display="block";
+document.getElementById("movableNav").style.display="none";
+
+}
+</script>
+
+<header>
+    <hgroup style="background:url('images/download_1699_873_LIC.png') no-repeat fixed top">
+        <h1>Shatrughna Jha</h1>
+        <h2>
+        Chief Insurance advisor<br /></h2>
+       	<strong>Agency Code</strong>:10010120<br />
+        <strong>Branch Code</strong>:120<br />
+        <strong>Branch Address</strong>:<br />
+        <em>Life Insurance Corporation Of India</em>, F-41, <br />F-Block, Inner Circle, Rajiv Chowk, Block F, <br />New Delhi,    		Delhi-110001<br />
+
+      
+    </hgroup>
+</header>
+<span id="dot0" onclick="dotToNav()" style="">
+
+<span id="dot1" class="dot" style="border:4px solid orange;right:6px;top:30px;position:fixed;float:right;display:block;border-radius:50px;"></span>
+<span id="dot2" class="dot" style="border:4px solid orange;right:18px;top:30px;position:fixed;float:right;display:block;border-radius:50px;"></span>
+<span id="dot3" class="dot" style="border:4px solid white;right:30px;top:30px;position:fixed;float:right;display:block;border-radius:50px;"></span>
+<span id="dot4" class="dot" style="border:4px solid blue;right:42px;top:30px;position:fixed;float:right;display:block;border-radius:50px;"></span>
+<span id="dot5" class="dot" style="border:4px solid white;right:6px;top:40px;position:fixed;float:right;display:block;border-radius:50px;"></span>
+<span id="dot6" class="dot" style="border:4px solid orange;right:18px;top:40px;position:fixed;float:right;display:block;border-radius:50px;"></span>
+<span id="dot7" class="dot" style="border:4px solid white;right:30px;top:40px;position:fixed;float:right;display:block;border-radius:50px;"></span>
+<span id="dot8" class="dot" style="border:4px solid blue;right:42px;top:40px;position:fixed;float:right;display:block;border-radius:50px;"></span>
+<span id="dot9" class="dot" style="border:4px solid orange;right:6px;top:50px;position:fixed;float:right;display:block;border-radius:50px;"></span>
+<span id="dot10" class="dot" style="border:4px solid orange;right:18px;top:50px;position:fixed;float:right;display:block;border-radius:50px;"></span>
+<span id="dot11" class="dot" style="border:4px solid white;right:30px;top:50px;position:fixed;float:right;display:block;border-radius:50px;"></span>
+<span id="dot12" class="dot" style="border:4px solid blue;right:42px;top:50px;position:fixed;float:right;display:block;border-radius:50px;"></span>
+<span id="dot13" class="dot" style="border:4px solid blue;right:6px;top:60px;position:fixed;float:right;display:block;border-radius:50px;"></span>
+<span id="dot14" class="dot" style="border:4px solid blue;right:18px;top:60px;position:fixed;float:right;display:block;border-radius:50px;"></span>
+<span id="dot15" class="dot" style="border:4px solid blue;right:30px;top:60px;position:fixed;float:right;display:block;border-radius:50px;"></span>
+<span id="dot16" class="dot" style="border:4px solid blue;right:42px;top:60px;position:fixed;float:right;display:block;border-radius:50px;"></span>  
+</span>
+
+<nav id="movableNav">
+
+<span id="x" onclick=navToDot()>X</span>
+<div id="agentPhoto">
+             <img src="images/Naruto.jpeg" width="130" height="130" />
+           </div>
+    <ul>
+      	<li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#faqs">FAQs</a></li>
+       	<li><a href="#blogs">My Blogs</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+        </ul>
+</nav>
+
+<article id="about" style="background:lightblue url('images/application-clinic-device-1289902.jpg') no-repeat fixed center; color:black;">
+
+<header>
+       <!--  <time datetime="2010-01-12" pubdate> 
+            <span>Jan</span> 12
+        </time>
+       <a href="#" title="Link to this post"
+rel="bookmark">Article Heading</a>
+      
+       -->
+        <h2>
+        About LIC
+        </h2>
+    </header>
+    <h3>Life Insurance Corporation of India</h3>
+    <ol>
+      	<li>An organization owned and regulated by government,</li>
+        <li>An experienced and most trusted organization,</li>
+        <li>Serving more than 1000 policyholders,</li>
+       	<li>A Largest Insurance Organization</li>
+       	<li>Have Largest Market Share </li>
+        <li>Receipient of:
+        <ol>
+        <li><em>Readers' Digest Trusted</em> brand award holder</li>
+        <li><em>India's Most Trusted</em> award holder  </li>
+        <li><em>World's Greatest Brand</em> award holder </li>
+        <li><em>Greetech CSR</em> award holder</li>
+        <li><em>Lokmat Corporate Excellence</em> award holder</li>
+	<li><em>FACE India Rashtra Vibhushan</em> award holder</li>
+	<li><em>Superbrands</em> award holder</li>
+	<li><em>My FM stars of Industry</em> award holder</li>
+	<li><em>brand icon</em> award holder</li>
+	<li><em>ABP News BFSI</em> award holder</li>
+	<li><em>Dainik Bhaskar India Pride</em> award holder</li>
+	<li><em>Money Today Financial</em> award holder</li>
+	<li><em>Golden Peacock</em> award holder for national training </li>
+        </ol> 
+        </li>
+    </ol>
+    <section>
+        <header>
+            <h2>Why choose LIC?</h2>
+        </header>
+        <ol>
+                        <li>
+                        To get sum assured certainly, at the time of maturity
+                        <!-- , or some documents related works for which one needs to visit LIC office, but you don't.-->
+                        </li>
+                        <li>
+			A government organization, so you can trust it
+                        </li>
+                        <li>To secure your:
+                        <ol>
+                        <li>
+                        Your Money
+                        </li>
+                        <li>
+                        Yourself
+                        </li>
+                        <li>
+                        Your family
+                        </li>
+                        <li>
+                        Your child's education
+                        </li>
+                        <li>
+                        Your Child's Marriage 
+                        </li>
+                        <li>
+			Your Retirement
+                        </li>
+                        
+                        </ol>
+                        </li>
+                       	<li>
+                        To get loan against policy, at right time
+                        </li>
+                       <!-- 
+                       <li>
+To get advise from someone like me, with 12 years of experience in this field and have been serving more than 1000 policyholders,  who can also be your insurance advisor to equip you with right policy plans according to your needs, financial conditions, size of family, marrital status, age of children(if any) so that the policy would secure their education too and have education loan against policy(if needed in future), whether you may require the money in future, so that, accordingly, the right policy with laon against policy or having terms and conditions like maturity duration in your favour.
+                        </li>
+
+
+-->
+                      </ol>
+
+    </section>
+ 
+    <header>
+       <!--  <time datetime="2010-01-12" pubdate> 
+            <span>Jan</span> 12
+        </time>
+       <a href="#" title="Link to this post"
+rel="bookmark">Article Heading</a>
+      
+       -->
+        <h2>
+        About Me
+        </h2>
+    </header>
+    <p>
+    <ol>
+      	<li>A certified and trained insurance agent</li>
+        <li>An experienced insurance agent</li>
+        <li>Serving more than 1000 policyholders</li>
+       	<li>Zone Manager Club Member</li>
+        <li>Receipient of <em>this</em> award</li>
+    </ol>
+    </p>
+    <section>
+        <header>
+            <h2>Why choose me?</h2>
+        </header>
+        <ol>
+                        <li>
+                        To get help in choosing best policy plan according to your needs and financial conditions from an authorised and experienced agent of LIC of India.
+                        </li>
+                        <li>To get help regarding premium payment reminder 
+                        <!-- , or some documents related works for which one needs to visit LIC office, but you don't.-->
+                        </li>
+                        <li>
+To avail all the services you deserve from LIC  at <em> right time </em>like claim payment, maturity payment,loan against policy etc. 
+                        </li>
+                       <!-- 
+                       <li>
+To get advise from someone like me, with 12 years of experience in this field and have been serving more than 1000 policyholders,  who can also be your insurance advisor to equip you with right policy plans according to your needs, financial conditions, size of family, marrital status, age of children(if any) so that the policy would secure their education too and have education loan against policy(if needed in future), whether you may require the money in future, so that, accordingly, the right policy with laon against policy or having terms and conditions like maturity duration in your favour.
+                        </li>
+
+
+-->
+                      </ol>
+
+    </section>
+
+</article>
+
+ <!-- article service start                -->
+
+
+
+<article id="services" style="background:lightblue url('images/blur-book-business-237756.jpg') no-repeat fixed top; ">
+    <header>
+       <!--  <time datetime="2010-01-12" pubdate> 
+            <span>Jan</span> 12
+        </time>
+       <a href="#" title="Link to this post"
+rel="bookmark">Article Heading</a>
+      
+       -->
+        <h1>
+        Services
+        </h1>
+    </header>
+     <section>
+        <header>
+            <h2>Benefits of being my policyholder:</h2>
+        </header>
+        <ol>
+                        <li>
+                        You would be getting monthly and weekly and one day-before reminder of premium due.
+                        </li>
+                        <li>You would be getting services like: 
+                        	<ol>
+                        	<li>
+                        	<em>address change</em>, if you have changed the address,then you don't have to go to LIC office, I'll be get it done for you,
+                        	</li> 
+                        	<li> 
+                        	similarly with <em>nominee change</em>,
+                        	</li> 
+                        	<li>
+                        	<em>name change</em>,
+                        	</li>
+                        	<li>
+                        	 <em>maturity payment</em>,
+                        	 </li>
+                        	  <li>
+                        	  <em>claim payment</em>,
+                        	  </li> 
+                        	  <li>
+                        	  <em>loan against policy</em>,
+                        	  </li> 
+                        	  <li>
+                        	  <em>surrendering the policy</em>,
+                        	  </li>
+                        	  <li>
+                        	  <em>PAN</em>-linking, or <em>adhaar</em>-linking,
+                        	  <!--  any other <em>document submission</em> or linking work. -->
+                        	  </li>
+                        	  <li>
+                        	  <em>Premium Payment</em>(only through <em>cheques</em>, in favor of <em>LIC of India</em>)
+                        	  </li>
+                        	  <li>
+                        	  <em>Updates about latest insurance plans</em> through sms or call, which suits your needs and budget. 
+                        	  </li>
+                        	  
+                        	  <li>
+                        	  <em>or any other change in details or document-related work</em>.
+                        	  </li>
+                        	  
+                        	  
+                        	</ol>
+                        <!-- , or some documents related works for which one needs to visit LIC office, but you don't.-->
+                        </li>
+                        <li>
+			I'll be there with you always.
+			</li>
+                       <!-- 
+                       <li>
+To get advise from someone like me, with 12 years of experience in this field and have been serving more than 1000 policyholders,  who can also be your insurance advisor to equip you with right policy plans according to your needs, financial conditions, size of family, marrital status, age of children(if any) so that the policy would secure their education too and have education loan against policy(if needed in future), whether you may require the money in future, so that, accordingly, the right policy with laon against policy or having terms and conditions like maturity duration in your favour.
+                        </li>
+
+
+-->
+                      </ol>
+
+    </section>
+</article>
+
+
+abc-accomplished-alphabet-48898.jpg
+<article id="blogs"  style="background:lightblue url('images/abc-accomplished-alphabet-48898.jpg') no-repeat fixed center; ">
+    <header>
+       <!--  <time datetime="2010-01-12" pubdate> 
+            <span>Jan</span> 12
+        </time>
+       <a href="#" title="Link to this post"
+rel="bookmark">Article Heading</a>
+      
+       -->
+        <h1>
+        My Blogs
+        </h1>
+    </header>
+     <section>
+        <header>
+            <h2>Important Insurance Acronyms:</h2>
+        </header>
+        <ul>
+        <li><strong>A.S.A.</strong>: Actual Sum Assured</li>
+        <li><strong>C.I.R.</strong>: This rider covers major illnesses by paying a reasonable extra premium.</li>
+        <li><strong>D.O.C.</strong>: Date Of Commencement</li>
+        <li><strong>D.G.H.</strong>: Declaration of Good Health</li>
+        <li><strong>D.O.</strong>: Development Officer</li>
+        <li><strong>D.A.B.</strong>: Double Accident Benefit</li>
+        <li><strong>E.P.D.B </strong>: Extended Permanent Disability Benefit</li>
+        <li><strong>F.A.B.</strong>: Final Additional Benefit</li>
+        <li><strong>F.M.R.</strong>: Full Medical Report</li>
+        <li><strong>G.A.</strong>: Guaranteed Addition</li>
+        <li><strong>I.R.D.A.</strong>: Insurance Regulatory and Development Authority of India</li>
+        <li><strong>L.B.D</strong>: Last BirthDay</li>
+        <li><strong>L.A.</strong>: Life Assured</li>
+        <li><strong>M.D.R.T</strong>: Million Dollar Round Table</li>
+        <li><strong>N.B.D</strong>: Near BirthDay</li>
+        <li><strong>N.S.A.P</strong>: Non Standard Age Proof</li>
+        <li><strong>P.F.Q</strong>: Personal Financial Questionnaire</li>
+        <li><strong>P.D.B.</strong>: Permanent Disability Benefit</li>
+        <li><strong>S.A.</strong>: Sum Assured</li>
+        <li><strong>S.U.C</strong>: Sum Under Consideration</li>
+        <li><strong>V.A.</strong>: Vesting Age</li>
+        
+        </ul>
+    </section>
+</article>
+  
+ 
+ 
+ 
+<footer>
+    <p>&copy; 2018 Shatrughna Jha Agency All rights reserved. Powered by Team-NilSha</p>
+</footer>
+
+
+<p>pangram, or holoalphabetic sentence, includes every letter of the alphabet at least once. The most challenging pangrams are the ones with the fewest letters. Here are a few of the best.: </p><p>The five boxing wizards jump quickly.Five quacking zephyrs jolt my wax bed.The quick brown fox jumps over the lazy dog.Jinxed wizards pluck ivy from the big quilt.Crazy Fredrick bought many very exquisite opal jewels.We promptly judged antique ivory buckles for the next prize.A mad boxer shot a quick, gloved jab to the jaw of his dizzy opponent.Jaded zombies acted quaintly but kept driving their oxen forward.The job requires extra pluck and zeal from every young wage earner.</p>
+
+</body>
+
+
+
+</html>
