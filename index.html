@@ -8,9 +8,19 @@ Your Personal Insurance Advisor
  <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+
+hgroup{
+background-size:20%;
+
+}
+
+}
 body{
-margin:10px 260px 10px 150px;
+/*margin:1% 26% 1% 15%; */
 font-size:1.2em;
+
 }
 ul>li{
 list-style-type:none;
@@ -40,6 +50,8 @@ header{
 background-color:blue;
 padding:0px 0px 0px 0px;
 color:yellow;
+background-image:linear-gradient(to right, blue, yellow); 
+text-shadow: 2px 2px 5px blue;
 }
 nav{
 border:5px solid blue;
@@ -93,7 +105,7 @@ document.getElementById("movableNav").style.display="none";
 </script>
 
 <header>
-    <hgroup style="background:url('download_1699_873_LIC.png') no-repeat fixed top">
+    <hgroup style="background-image:linear-gradient(to right, blue, yellow); text-shadow: 4px 5px 10px blue;">
         <h1>Shatrughna Jha</h1>
         <h2>
         Chief Insurance advisor<br /></h2>
@@ -129,7 +141,7 @@ document.getElementById("movableNav").style.display="none";
 
 <span id="x" onclick=navToDot()>X</span>
 <div id="agentPhoto">
-             <img src="Naruto.jpeg" width="130" height="130" />
+             <img src="images/Naruto.jpeg" width="130" height="130" />
            </div>
     <ul>
       	<li><a href="#about">About</a></li>
@@ -139,8 +151,11 @@ document.getElementById("movableNav").style.display="none";
         <li><a href="#contact">Contact Me</a></li>
         </ul>
 </nav>
+<!--
+"background:lightblue url('images/application-clinic-device-1289902.jpg') no-repeat fixed center; color:black;"
 
-<article id="about" style="background:lightblue url('application-clinic-device-1289902.jpg') no-repeat fixed center; color:black;">
+-->
+<article id="about" style="background-image: linear-gradient(to right, lightblue ,white);" >
 
 <header>
        <!--  <time datetime="2010-01-12" pubdate> 
@@ -276,11 +291,16 @@ To get advise from someone like me, with 12 years of experience in this field an
 
 </article>
 
- <!-- article service start                -->
+ <!-- article service start           
+ 
+ style="background-image: linear-gradient(to right, lightblue ,white);"
+ 
+ style="background:lightblue url('images/blur-book-business-237756.jpg') no-repeat fixed top; "
+      -->
 
 
 
-<article id="services" style="background:lightblue url('blur-book-business-237756.jpg') no-repeat fixed top; ">
+<article id="services"  style="background-image: linear-gradient(to right, lightblue ,white);">
     <header>
        <!--  <time datetime="2010-01-12" pubdate> 
             <span>Jan</span> 12
@@ -352,6 +372,8 @@ To get advise from someone like me, with 12 years of experience in this field an
                         </li>
 
 
+abc-accomplished-alphabet-48898.jpg
+
 -->
                       </ol>
 
@@ -359,10 +381,15 @@ To get advise from someone like me, with 12 years of experience in this field an
 </article>
 
 
-abc-accomplished-alphabet-48898.jpg
-<article id="blogs"  style="background:lightblue url('abc-accomplished-alphabet-48898.jpg') no-repeat fixed center; ">
+<article id="blogs" style="background-image: linear-gradient(to right, lightblue ,white);" >
     <header>
-       <!--  <time datetime="2010-01-12" pubdate> 
+       <!--  
+        style="background-image: linear-gradient(to right, lightblue ,white);"
+       style="background:lightblue url('images/abc-accomplished-alphabet-48898.jpg') no-repeat fixed center; "
+       
+       
+       
+       <time datetime="2010-01-12" pubdate> 
             <span>Jan</span> 12
         </time>
        <a href="#" title="Link to this post"
@@ -406,13 +433,15 @@ rel="bookmark">Article Heading</a>
   
  
  
- 
-<footer>
-    <p>&copy; 2018 Shatrughna Jha Agency All rights reserved. Powered by Team-NilSha</p>
+<footer style="background-image: linear-gradient(to right, #006699 ,#0066CC); color:yellow;">
+    <p>&copy; 2018 Shatrughna Jha Agency<br /> All rights regarding designing and layout are reserved.<br /> Powered by 
+    <strong style="text-shadow: 2px 2px 5px lightblue;">Team-<em>N</em>il<em>S</em>ha</strong></p>
 </footer>
 
-
+<!--
 <p>pangram, or holoalphabetic sentence, includes every letter of the alphabet at least once. The most challenging pangrams are the ones with the fewest letters. Here are a few of the best.: </p><p>The five boxing wizards jump quickly.Five quacking zephyrs jolt my wax bed.The quick brown fox jumps over the lazy dog.Jinxed wizards pluck ivy from the big quilt.Crazy Fredrick bought many very exquisite opal jewels.We promptly judged antique ivory buckles for the next prize.A mad boxer shot a quick, gloved jab to the jaw of his dizzy opponent.Jaded zombies acted quaintly but kept driving their oxen forward.The job requires extra pluck and zeal from every young wage earner.</p>
+-->
+
 
 </body>
 
