@@ -27,31 +27,38 @@ list-style-type:none;
 
 }
 ul>li:hover{
-background-color:orange;
+background-image: linear-gradient(to right, blue ,orange,yellow);
+
+text-shadow: 2px 2px 5px orange;
+/*background-color:orange;*/
 border-radius:20px;
 color:white;
 }
 
 ol>li:hover{
-background-color:orange;
+background-image: linear-gradient(to right, blue ,orange,yellow);
+/*background-color:orange;*/
 border-radius:10px;
 color:white;
+
+text-shadow: 2px 2px 5px orange;
 }
 li>li:hover{
-
-background-color:orange;
+background-image: linear-gradient(to right, blue ,orange,yellow);
+/*background-color:orange;*/
 border-radius:20px;
 color:white;
+
+text-shadow: 2px 2px 5px orange;
 }
 a{
 text-decoration:none;
 }
 header{
-background-color:blue;
+background-image: linear-gradient(to right, yellow ,orange);
 padding:0px 0px 0px 0px;
-color:yellow;
-background-image:linear-gradient(to right, blue, yellow); 
-text-shadow: 2px 2px 5px blue;
+color:blue;
+text-shadow: 2px 2px 5px orange;
 }
 nav{
 border:5px solid blue;
@@ -87,6 +94,37 @@ background-color:yellow;
 
 }
 
+.expendable {  
+/*background: #fff;  
+color: #000;     
+line-height: 50px;  
+height: 0px; 
+
+
+*/
+border:2px solid red;
+
+overflow: hidden;  
+transition: all .5s ease-in-out;  
+border-radius:25px;
+display:none;
+}  
+.expendable:target { 
+
+/*  background: yellow;  
+height: 50px;
+	
+visibility:visible;
+*/
+display:block;
+ }
+ img
+{
+    max-width: 50%;
+    min-width: 30px;
+    height: auto;
+}
+
 </style> 
 </head>
 <body>
@@ -105,7 +143,7 @@ document.getElementById("movableNav").style.display="none";
 </script>
 
 <header>
-    <hgroup style="background-image:linear-gradient(to right, blue, yellow); text-shadow: 4px 5px 10px blue;">
+    <hgroup style="background-image:linear-gradient(to right, yellow, orange); text-shadow: 4px 5px 10px orange; text-align:center;">
         <h1>Shatrughna Jha</h1>
         <h2>
         Chief Insurance advisor<br /></h2>
@@ -117,8 +155,11 @@ document.getElementById("movableNav").style.display="none";
       
     </hgroup>
 </header>
-<span id="dot0" onclick="dotToNav()" style="">
+<span id="dot0"  style="background:url('') no-repeat fixed right; float:right;display:block;">
+<img src="downloadLICHD.png" style="float:right;display:block; position:fixed; top:60px; right:0px;" width="20px" height="35px" />
 
+<!--
+onclick="dotToNav()"
 <span id="dot1" class="dot" style="border:4px solid orange;right:6px;top:30px;position:fixed;float:right;display:block;border-radius:50px;"></span>
 <span id="dot2" class="dot" style="border:4px solid orange;right:18px;top:30px;position:fixed;float:right;display:block;border-radius:50px;"></span>
 <span id="dot3" class="dot" style="border:4px solid white;right:30px;top:30px;position:fixed;float:right;display:block;border-radius:50px;"></span>
@@ -135,8 +176,9 @@ document.getElementById("movableNav").style.display="none";
 <span id="dot14" class="dot" style="border:4px solid blue;right:18px;top:60px;position:fixed;float:right;display:block;border-radius:50px;"></span>
 <span id="dot15" class="dot" style="border:4px solid blue;right:30px;top:60px;position:fixed;float:right;display:block;border-radius:50px;"></span>
 <span id="dot16" class="dot" style="border:4px solid blue;right:42px;top:60px;position:fixed;float:right;display:block;border-radius:50px;"></span>  
+-->
 </span>
-
+<!--
 <nav id="movableNav">
 
 <span id="x" onclick=navToDot()>X</span>
@@ -151,6 +193,7 @@ document.getElementById("movableNav").style.display="none";
         <li><a href="#contact">Contact Me</a></li>
         </ul>
 </nav>
+-->
 <!--
 "background:lightblue url('images/application-clinic-device-1289902.jpg') no-repeat fixed center; color:black;"
 
@@ -166,9 +209,12 @@ rel="bookmark">Article Heading</a>
       
        -->
         <h2>
+        <a href="#aboutLIC">
         About LIC
+        </a>
         </h2>
     </header>
+    <span id="aboutLIC" class="expendable">
     <h3>Life Insurance Corporation of India</h3>
     <ol>
       	<li>An organization owned and regulated by government,</li>
@@ -194,10 +240,17 @@ rel="bookmark">Article Heading</a>
         </ol> 
         </li>
     </ol>
+    </span>
     <section>
         <header>
-            <h2>Why choose LIC?</h2>
+            <h2>
+            <a href="#whyLIC">
+            Why choose LIC?
+            </a>
+            </h2>
         </header>
+        <span id="whyLIC" class="expendable">
+    
         <ol>
                         <li>
                         To get sum assured certainly, at the time of maturity
@@ -240,7 +293,7 @@ To get advise from someone like me, with 12 years of experience in this field an
 
 -->
                       </ol>
-
+		</span>
     </section>
  
     <header>
@@ -252,10 +305,14 @@ rel="bookmark">Article Heading</a>
       
        -->
         <h2>
+        <a href="#aboutMe">
         About Me
+        </a>
         </h2>
     </header>
     <p>
+    <span id="aboutMe" class="expendable">
+    
     <ol>
       	<li>A certified and trained insurance agent</li>
         <li>An experienced insurance agent</li>
@@ -263,11 +320,18 @@ rel="bookmark">Article Heading</a>
        	<li>Zone Manager Club Member</li>
         <li>Receipient of <em>this</em> award</li>
     </ol>
+    </span>
     </p>
     <section>
         <header>
-            <h2>Why choose me?</h2>
+            <h2>
+            <a href="#whyMe">	
+            Why choose me?
+            </a>
+            </h2>
         </header>
+        <span id="whyMe" class="expendable">
+    
         <ol>
                         <li>
                         To get help in choosing best policy plan according to your needs and financial conditions from an authorised and experienced agent of LIC of India.
@@ -285,8 +349,8 @@ To get advise from someone like me, with 12 years of experience in this field an
 
 
 -->
-                      </ol>
-
+        </ol>
+	</span>
     </section>
 
 </article>
@@ -310,10 +374,14 @@ rel="bookmark">Article Heading</a>
       
        -->
         <h1>
+       <a href="#myServices">
         Services
+        </a>
         </h1>
     </header>
      <section>
+     <span id="myServices" class="expendable">
+    
         <header>
             <h2>Benefits of being my policyholder:</h2>
         </header>
@@ -376,7 +444,7 @@ abc-accomplished-alphabet-48898.jpg
 
 -->
                       </ol>
-
+</span>
     </section>
 </article>
 
@@ -397,10 +465,14 @@ rel="bookmark">Article Heading</a>
       
        -->
         <h1>
+        <a href="#myBlogs">
         My Blogs
+        </a>
         </h1>
     </header>
      <section>
+    <span id="myBlogs" class="expendable">
+    
         <header>
             <h2>Important Insurance Acronyms:</h2>
         </header>
@@ -428,12 +500,13 @@ rel="bookmark">Article Heading</a>
         <li><strong>V.A.</strong>: Vesting Age</li>
         
         </ul>
+        </span>
     </section>
 </article>
   
  
  
-<footer style="background-image: linear-gradient(to right, #006699 ,#0066CC); color:yellow;">
+<footer style="background-image: linear-gradient(to right, #006699 ,#0066CC); color:yellow;text-align:center;">
     <p>&copy; 2018 Shatrughna Jha Agency<br /> All rights regarding designing and layout are reserved.<br /> Powered by 
     <strong style="text-shadow: 2px 2px 5px lightblue;">Team-<em>N</em>il<em>S</em>ha</strong></p>
 </footer>
