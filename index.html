@@ -137,8 +137,32 @@ display:block;
     min-width: 30px;
     height: auto;
 }
-tr{background-color:violet; color:blue;}
-tr:hover{background-color:blue; color:yellow;}
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+/* Zebra Like yellow and  */
+tr:nth-of-type(odd) { 
+  background: blue; 
+  color:white;
+}
+tr:nth-of-type(even) { 
+  background: violet;
+  color:white 
+}
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+}
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: center; 
+}
+
+tr:nth-of-type(odd):hover{background-color:green; color:red;}
+tr:nth-of-type(even):hover{background-color:yellow; color:black;}
 dl>dt{
 color:red
 
@@ -147,6 +171,30 @@ dl>dd{
 color:green;
 
 }
+
+#forLaptop{
+display:block;
+}
+#forMobile{
+display:none;
+}
+@media 
+only screen and (max-width:600px)
+  {
+#forLaptop{
+display:none;
+visibility:hidden;
+}
+#forMobile{
+visibility:visible;
+display:block;
+}
+
+	/* 
+	(min-device-width: 600px) and (max-device-width: 600px) Force table to not be like tables anymore */
+	
+}
+
 </style> 
 </head>
 <body>
@@ -178,7 +226,7 @@ document.getElementById("movableNav").style.display="none";
     </hgroup>
 </header>
 <span id="dot0"  style="background:url('') no-repeat fixed right; float:right;display:block;">
-<img src="downloadLIC.png" alt="LIC logo" style="float:right;display:block; position:fixed; top:160px; right:8px;" width="45px" height="75px" />
+<img src="downloadLIC.jpg" alt="LIC logo" style="float:right;display:block; position:fixed; top:160px; right:8px;" width="45px" height="75px" />
 
 <!--downloadLIC.png
 onclick="dotToNav()"
@@ -525,17 +573,18 @@ rel="bookmark">Article Heading</a>
         <header>
              <h2>INCOME TAX RATES FOR ASSESSMENT YEAR 2018-19(FINANCIAL YEAR 2017-2018)</h2>
         </header>
-        <table>
-            <tr>
+        <table id="forLaptop"><caption>Income Tax Rates</caption>
+          
+           <tr>
     
   		  <th colspan="3">Income Slabs</th>
   		  <th>Tax Rates</th>
   	    </tr>
   	    <tr>
-    		   <td>Individual & HUF with age<=80</td>
-    		  <td>Individual with 60<=age<80</td>
+    		  <td>Individual & HUF with age&lt;60</td>
+    		  <td>Individual with 60<=age<=80</td>
     		  <td>Individual with age>80</td>
-		  <td></td>
+    		  <td></td>
     
   	    </tr>
 	    <tr>
@@ -562,9 +611,150 @@ rel="bookmark">Article Heading</a>
 	    	  <td>Income > Rs.10,00,000</td>
 	    	  <td>30%</td>
 	    </tr>
-	    
+	   
+    	    
+           <!-- 
+             <tr>
+    
+  		  <th>Income Slabs</th>
+  		  <th>Tax Rates</th>
+  	    </tr>
+  	    <tr>
+    		  <td >Individual & HUF with age&lt;60</td>
+    		  <td rowspan="3" style="height:70px;"></td>
+    		  
+   	    </tr>
+    	    <tr>  <td>Individual with 60<=age<=80 </td>
+    	    </tr>
+    	    <tr>  <td >Individual with age>80</td>
+    		  
+    
+  	    </tr>
+	    <tr>
+	    	  <td>Income <=Rs.2,50,000</td>
+	    	  <td rowspan="3">NIL</td>
+	    </tr>
+	    <tr>  <td>Income <=Rs.3,00,000</td>
+	    </tr>
+	    <tr>  <td>Income <=Rs.5,00,000</td>
+	    	  
+	    </tr>
+	    <tr>
+	    	  <td>Rs.2,50,001 to Rs.5,00,000</td>
+	    	  <td rowspan="3">5%</td>
+	    </tr> 
+	    <tr>  <td>Rs.3,00,001 to Rs.5,00,000</td>
+	    </tr> 
+	    <tr>  <td>-</td>
+	    	  
+	    </tr>
+	    <tr>
+	    	  <td>Rs.5,00,001 to Rs.10,00,000</td>
+	    	  <td rowspan="3">20%</td>
+	    </tr>
+	    <tr>  <td>Rs.5,00,001 to Rs.10,00,000</td>
+	    </tr>
+	    <tr>  <td>Rs.5,00,001 to Rs.10,00,000</td>
+	    	  
+	    </tr>
+	    <tr>
+	    	  <td>Income > Rs.10,00,000</td>
+	    	  <td rowspan="3">30%</td>
+	    </tr>
+	    <tr>  <td>Income > Rs.10,00,000</td>
+	    </tr> <td>Income > Rs.10,00,000</td>
+	    	  
+	    </tr>
+	
+    	    ///////////////////////
+        
+          
+        
+            -->
         </table>
-        <strong>
+        <table id="forMobile">
+        <tr>
+    
+  		  <th>Income Slabs</th>
+  		  <th>Tax Rates</th>
+  	    </tr>
+  	    <tr>
+    		  <td >Individual & HUF with age&lt;60</td>
+    		  <td style="height:10px;"></td>
+    		  
+   	    </tr>
+   	    <tr>
+	    	  <td>Income <=Rs.2,50,000</td>
+	    	  <td >NIL</td>
+	    </tr>
+	    <tr>
+	    	  <td>Rs.2,50,001 to Rs.5,00,000</td>
+	    	  <td>5%</td>
+	    </tr> 
+	     <tr>
+	    	  <td>Rs.5,00,001 to Rs.10,00,000</td>
+	    	  <td>20%</td>
+	    </tr>
+	   <tr>
+	    	  <td>Income > Rs.10,00,000</td>
+	    	  <td>30%</td>
+	    </tr>		
+
+    	    <tr>  
+    	    <td>Individual with 60<=age<=80 </td>
+    	    <td style="height:10px;"></td>
+    	    </tr>
+    	    <tr>
+    	    <td>Income <=Rs.3,00,000</td>
+    	    <td >NIL</td>
+    	    </tr>
+    	    
+    	    <tr>
+    	    <td>Rs.3,00,001 to Rs.5,00,000</td>
+    	     <td>5%</td>
+    	    </tr>
+    	    
+    	    <tr>
+    	    <td>Rs.5,00,001 to Rs.10,00,000</td>
+    	    <td>20%</td>
+    	    </tr>
+    	    
+    	    <tr>
+    	    <td>Income > Rs.10,00,000</td>
+    	    <td>30%</td>
+    	    </tr>
+    	    
+    	    <tr>
+    	    <td >Individual with age>80</td>
+    	    <td></td>  
+    
+  	    </tr>
+	    
+    	    
+    	    <tr>
+    	    <td>Income <=Rs.5,00,000</td>
+    	    <td>NIL</td>
+    	    </tr>
+    	    
+    	    <tr>
+    	    <td>-</td>
+    	    <td>5%</td>
+    	    </tr>
+    	    
+    	    <tr>
+    	    <td>Rs.5,00,001 to Rs.10,00,000</td>
+    	    <td>20%</td>
+    	    </tr>
+    	    
+    	    <tr>
+    	    <td>Income > Rs.10,00,000</td>
+    	    <td>30%</td>
+    	    </tr>
+    	
+        </table>
+       
+       
+         <strong>
         Surcharge
         </strong>
         <ol>
