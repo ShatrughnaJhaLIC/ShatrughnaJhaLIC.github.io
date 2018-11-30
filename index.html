@@ -20,6 +20,8 @@ background-size:20%;
 body{
 /*margin:1% 26% 1% 15%; */
 font-size:1.2em;
+background-image: linear-gradient(to bottom, blue,orange);
+
 
 }
 ul>li{
@@ -27,35 +29,43 @@ list-style-type:none;
 
 }
 ul>li:hover{
-background-image: linear-gradient(to right, blue ,orange,yellow);
+background-image: linear-gradient(to right, #FFCC33 ,#FF9966);
 
 text-shadow: 2px 2px 5px orange;
-/*background-color:orange;*/
+/*background-color:orange;
+#FFCC33 ,#FF9966
+downloadLIC.png
+*/
 border-radius:20px;
-color:white;
+color:blue;
 }
 
 ol>li:hover{
-background-image: linear-gradient(to right, blue ,orange,yellow);
+background-image: linear-gradient(to right, #FFCC33 ,#FF9966);
 /*background-color:orange;*/
 border-radius:10px;
-color:white;
+color:blue;
 
 text-shadow: 2px 2px 5px orange;
 }
+
+/*
+
 li>li:hover{
-background-image: linear-gradient(to right, blue ,orange,yellow);
-/*background-color:orange;*/
+background-image: linear-gradient(to right, #FFCC33 ,#FF9966);
 border-radius:20px;
-color:white;
+color:blue;
 
 text-shadow: 2px 2px 5px orange;
 }
+
+/*background-color:orange;*/
+
 a{
 text-decoration:none;
 }
 header{
-background-image: linear-gradient(to right, yellow ,orange);
+background-image: linear-gradient(to right, #FFCC33 ,#FF9966);
 padding:0px 0px 0px 0px;
 color:blue;
 text-shadow: 2px 2px 5px orange;
@@ -107,6 +117,7 @@ border:2px solid red;
 overflow: hidden;  
 transition: all .5s ease-in-out;  
 border-radius:25px;
+visibility:hidden;
 display:none;
 }  
 .expendable:target { 
@@ -114,8 +125,10 @@ display:none;
 /*  background: yellow;  
 height: 50px;
 	
-visibility:visible;
+display:block;
 */
+
+visibility:visible;
 display:block;
  }
  img
@@ -124,7 +137,16 @@ display:block;
     min-width: 30px;
     height: auto;
 }
+tr{background-color:violet; color:blue;}
+tr:hover{background-color:blue; color:yellow;}
+dl>dt{
+color:red
 
+}
+dl>dd{
+color:green;
+
+}
 </style> 
 </head>
 <body>
@@ -143,7 +165,7 @@ document.getElementById("movableNav").style.display="none";
 </script>
 
 <header>
-    <hgroup style="background-image:linear-gradient(to right, yellow, orange); text-shadow: 4px 5px 10px orange; text-align:center;">
+    <hgroup style="background-image:linear-gradient(to right, #FFCC33 ,#FF9966); text-shadow: 4px 5px 10px yellow; text-align:center;">
         <h1>Shatrughna Jha</h1>
         <h2>
         Chief Insurance advisor<br /></h2>
@@ -156,9 +178,9 @@ document.getElementById("movableNav").style.display="none";
     </hgroup>
 </header>
 <span id="dot0"  style="background:url('') no-repeat fixed right; float:right;display:block;">
-<img src="downloadLICHD.png" style="float:right;display:block; position:fixed; top:60px; right:0px;" width="20px" height="35px" />
+<img src="downloadLIC.jpg" alt="LIC logo" style="float:right;display:block; position:fixed; top:160px; right:8px;" width="45px" height="75px" />
 
-<!--
+<!--downloadLIC.png
 onclick="dotToNav()"
 <span id="dot1" class="dot" style="border:4px solid orange;right:6px;top:30px;position:fixed;float:right;display:block;border-radius:50px;"></span>
 <span id="dot2" class="dot" style="border:4px solid orange;right:18px;top:30px;position:fixed;float:right;display:block;border-radius:50px;"></span>
@@ -500,6 +522,215 @@ rel="bookmark">Article Heading</a>
         <li><strong>V.A.</strong>: Vesting Age</li>
         
         </ul>
+        <header>
+             <h2>INCOME TAX RATES FOR ASSESSMENT YEAR 2018-19(FINANCIAL YEAR 2017-2018)</h2>
+        </header>
+        <table>
+            <tr>
+    
+  		  <th colspan="3">Income Slabs</th>
+  		  <th>Tax Rates</th>
+  	    </tr>
+  	    <tr>
+    		  <td>Individual & HUF below age of 60 years</td>
+    		  <td>Individual 60 years of age and more but less than 80 years</td>
+    		  <td>Individual 80 years of age and more</td>
+    		  <td></td>
+    
+  	    </tr>
+	    <tr>
+	    	  <td>Income <=Rs.2,50,000</td>
+	    	  <td>Income <=Rs.3,00,000</td>
+	    	  <td>Income <=Rs.5,00,000</td>
+	    	  <td>NIL</td>
+	    </tr>
+	    <tr>
+	    	  <td>Rs.2,50,001 to Rs.5,00,000</td>
+	    	  <td>Rs.3,00,001 to Rs.5,00,000</td>
+	    	  <td>-</td>
+	    	  <td>5%</td>
+	    </tr>
+	    <tr>
+	    	  <td>Rs.5,00,001 to Rs.10,00,000</td>
+	    	  <td>Rs.5,00,001 to Rs.10,00,000</td>
+	    	  <td>Rs.5,00,001 to Rs.10,00,000</td>
+	    	  <td>20%</td>
+	    </tr>
+	    <tr>
+	    	  <td>Income > Rs.10,00,000</td>
+	    	  <td>Income > Rs.10,00,000</td>
+	    	  <td>Income > Rs.10,00,000</td>
+	    	  <td>30%</td>
+	    </tr>
+	    
+        </table>
+        <strong>
+        Surcharge
+        </strong>
+        <ol>
+        <li>Surcharge for income between Rs.50,00,000 to Rs.100,00,000 =10% of income tax(according to above table)</li>
+        <li>Surcharge for income > Rs.100,00,000 =15% of income tax(according to above table)</li>
+        </ol>
+        <strong>
+        Education Cess
+        </strong>
+        <ol>
+        <li>2% of amount of Income-tax and surcharge to levied</li>
+        <li>1% of amount of Income-tax  to  be levied(not including "Education Cess on Income-tax")</li>
+        </ol>
+        <header>
+        	<h2> LIC's Insurance plans</h2>
+        	
+        </header>
+        <ol>
+        <li>Endowment Assurance Plans
+        <dl>
+        <dt> New Endowment Plan(Plan No. 814)</dt>
+        <dd>A regular premium with profits plan which provides for applicable sum assured along with the accrued bonuses on maturity or on earlier death of life assured</dd>
+        
+        </dl>
+        
+        <dl>
+        <dt> New Jeevan Anand(Plan no. 815)</dt>
+        <dd>This is unique with-profits plan which combines the features of Endowment and Whole Life plan. On death during the policy term or on survival to the end of the policy term, the applicable sum assured is payable along with the accrued bonuses On death after the expiry of the policy term, sum assured is payable</dd>
+        </dl>
+
+        <dl>
+        <dt> Single Premium Endowment Plan(Plan No.817)</dt>
+        <dd>A single premium with-profits plan where the sum assured is payable along with the accrued bonuses on maturity or on earlier death of the life assured.</dd>
+        </dl>
+
+	<dl>
+        <dt> Jeevan Rakshak(Plan no.827)</dt>
+        <dd>A regular premium with profits plan which provides for applicable sum assured along with loyalty addition, if any, on maturity or on earlier death of the life assured. This plan is availble only to standard healthy lives without any medical requirement. The sum assured assured per life varies from Rs.75,000 to Rs. 2,00,000</dd>
+        </dl>
+        
+        <dl>
+        <dt> Limited Premium Endowment Plan(Plan no. 830)</dt>
+        <dd>A limited premium with profits plan which provides for applicable sum assured along with accrued bonuses on maturity or on earlier death of the life assured.</dd>
+        </dl>
+	
+	<dl>
+        <dt> Jeevan Lakshya(Plan No.833)</dt>
+        <dd>A limited premium with profits plan on death during the policy term, the future premiums will be waived and an Annual Income Benefit of 10% of sum assured will be payable till the end of the policy term. On expiry of the policy term, applicable sum assured along with the accrued bonuses for full term shall be payable irrespective of survival of the life assured.</dd>
+        </dl>
+
+	<dl>
+        <dt> Jeevan Labh(Plan No.836)</dt>
+        <dd>A limited premium with profits plan which provides for applicable sum assured along with accrued bonuses on maturity or on earlier death of the life assured.</dd>
+        </dl>
+
+	<dl>
+        <dt> Jeevan Pragati Plan(Plan No.838)</dt>
+        <dd>This is a with-profits plan wherein the risk cover automatically increases after every five years. The plan provides for applicable sum assured along with the accrued bonuses on maturity or on earlier death of the life assured.</dd>
+        </dl>
+        
+        <dl>
+        <dt> Aadhar Stambh(Plan No. 843)</dt>
+        <dd>This plan is designed for male lives having Aadhar Card issued by UIDAI. It is a regular premium non-linked, with profits, endowment plan which provides for applicable sum assured along with loyalty addition, if any, on maturity or on earlier death of the life assured. It is available for standard health lives without any medical examination and the total Sum Assured per life varies from Rs.75,000 to Rs.3,00,000</dd>
+        </dl>
+        
+        <dl>
+        <dt> Aadhar Shila(Plan No.844)</dt>
+        <dd>This plan is designed for female lives having Aadhar Card issued by UIDAI. It is a regular premium  non-linked, with profits, endowment plan whcih provides for applicable sum assured along with loyalty addition, if any, on maturity. The death benefit under this plan is 110% of Sum Assured along with loyalty addition, if any. It is vailable for standard healthy lives without any medical examination and the total Sum Assured per life varies from Rs.75,000 to Rs.3,00,000.</dd>
+        </dl>
+        
+        <dl>
+        <dt> Jeevan Umang(Plan No. 845)</dt>
+        <dd>This plan is non-lined, with profits whole life assurance plan. It also provides for annual survive benefits from the end  of premium paying term till maturity and a lump sum payment at the time of maturity or on death of the policy holder during the policy term.</dd>
+        </dl>
+        
+        
+        <dl>
+        <dt> Jeevan Utkarsh(Plan No. 846)</dt>
+        <dd> Jeevan Utkarsh is a single premium close ended plan for a policy term of 12 years. On death during the policy term Death Sum Assured equal to 10 times the single premium is payable. On survival to the end of the policy term Maturity Sum Assured is payable. Loyalty Addition, if any, may also be payable on exit.</dd>
+        </dl>
+        </li>
+        <li> Term Assurance Plans
+        
+        <dl>
+        <dt> Anmol Jeevan-II(Plan No.822)</dt>
+        <dd>A pure term assurance plan where one can choose sum assured from Rs.6,00,000 to Rs.24,00,000</dd>
+        </dl>
+        
+        
+        <dl>
+        <dt> Amulya Jeevan-II(Plan No. 823)</dt>
+        <dd>A pure term assurance plan with a minimum sum assured of Rs.25,00,000</dd>
+        </dl>
+        
+	
+	<dl>
+        <dt> e-term Plan(Plan No.825)</dt>
+        <dd>A pure term assurance plan which is available for online sale only. Under this plan, there are two categories for premium rates viz. Aggregate Category and Non-Smoker Category. Minimum sum assured for Aggregate category is Rs.25,00,000 and for Non-Smoker Category is Rs.50,00,000.</dd>
+        </dl>
+        </li>
+	
+	<li>Children Plans
+	<dl>
+        <dt> New Children's Money Back Plan(Plan No.832)</dt>
+        <dd>A regular premium with-profits money back plan. Besides providing life cover during the policy term survival benefits as a percentage of the sum assured shall be payable after every two years starting from age 18 upto age 22 years. On maturity at the age of 25 years the balance sum along with the accrued bonuses shall be payable.</dd>
+        </dl>
+	
+	<dl>
+        <dt> Jeevan Tarun(Plan No. 834)</dt>
+        <dd>A limited premium with-profits money back plan which provides for life covere during the policy term. Under this plan, the policyholder can choose one of the four available options to decide the proportion of survival benefits (i.e., 0% / 5% / 10% / 15%) to be availed each year from age 20 to 24 years. On maturity at the age of 25 years the balance sum assured along with the accrued bonuses shall be payable.</dd>
+        </dl>
+        </li>
+	
+	<li>Pension Plans
+	<dl>
+        <dt> Jeevan Akshay-VI(Plan No. 189)</dt>
+        <dd>An immediate annuity plan with a number of annuity options including annuity certain and life thereafter, annuity with return of Purchase Price and Joint Life annuity etc.</dd>
+        </dl>
+        
+
+	<dl>
+        <dt> New Jeevan Nidhi(Plan No. 818)</dt>
+        <dd>A with-profits deferred pension plan which provides death cover during the deferment period. On vesting applicable sum assured along with the accrued bonuses shall be utilized to purchase annuity or a deferred pension plan.</dd>
+        </dl>
+        </li>
+        
+        <li>Micro Insurance Plans
+        <dl>
+        <dt> Bhagya Lakshmi(Plan No. 839)</dt>
+        <dd>A without-profits limited payment protection orieted micro insurance plan. The available sum assured ranges from Rs.20,000 to Rs.50,000. 110% of total amount of premiums payable during the term of the contract is the maturity value.</dd>
+        </dl>
+        
+
+        <dl>
+        <dt> New Jeevan Mangal(Plan No. 840)</dt>
+        <dd>A without-profits micro insurance cum term insurance plan with in-built accident benefit. The available sum assured ranges from Rs.10,000 to Rs.50,000. The total premiums payable during the term of the contract is the maturity value.</dd>
+        </dl>
+        </li>
+	
+	<li>Health Insurance Plan
+	<dl>
+        <dt> Jeevan Arogya(Plan No. 904)</dt>
+        <dd>A health insurance plan which provides for fixed benefits for hospitalization and various surgical procedures irrespective of actual cost incurred.</dd>
+        </dl>
+        </li>
+	
+	<li>Unit Linked Plan
+	<dl>
+        <dt> New Endowment Plus(Plan No. 835)</dt>
+        <dd>A unit linked endowment plan which offers investment cum insurance during the term of policy</dd>
+        </dl>
+        </li>
+
+	<li>Other Plans
+	<dl>
+        <dt> New Money Back Plans(Plan Nos. 820 & 821)</dt>
+        <dd>Besides providing life cover of 125% of Sum Assured during the term(20 & 25 years) of the policy, survival benefits at specified durations linked to the sum assured during the term of the policy will be available. On maturity the balance sum assured along with the accrued bonuses shall be payable.</dd>
+        </dl>
+        
+	<dl>
+        <dt> New Bima Bachat(Plan No. 816)</dt>
+        <dd>A single premium with-profits money back plan with policy term of 9, 12 and 15 years. Besides providing life cover during the term of the policy, survival benefits at specified durations linked to the sum assured during the term of policy will be available. On maturity the single premium paid along with the Loyalty Addition, if any, shall be payable.</dd>
+        </dl>
+        </li>
+
+        </ol>
         </span>
     </section>
 </article>
@@ -508,7 +739,7 @@ rel="bookmark">Article Heading</a>
  
 <footer style="background-image: linear-gradient(to right, #006699 ,#0066CC); color:yellow;text-align:center;">
     <p>&copy; 2018 Shatrughna Jha Agency<br /> All rights regarding designing and layout are reserved.<br /> Powered by 
-    <strong style="text-shadow: 2px 2px 5px lightblue;">Team-<em>N</em>il<em>S</em>ha</strong></p>
+    <strong style="text-shadow: 2px 2px 5px orange;">Team-<em>N</em>il<em>S</em>ha</strong></p>
 </footer>
 
 <!--
