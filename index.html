@@ -7,6 +7,9 @@ Your Personal Insurance Advisor
 </title>
  <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
 <style>
 media only screen and (max-width: 768px) {
     /* For mobile phones: */
@@ -30,37 +33,17 @@ list-style-type:none;
 }
 ul>li:hover{
 background-image: linear-gradient(to right, #FFCC33 ,#FF9966);
-
 text-shadow: 2px 2px 5px orange;
-/*background-color:orange;
-#FFCC33 ,#FF9966
-downloadLIC.png
-*/
 border-radius:20px;
 color:blue;
 }
 
 ol>li:hover{
 background-image: linear-gradient(to right, #FFCC33 ,#FF9966);
-/*background-color:orange;*/
 border-radius:10px;
 color:blue;
-
 text-shadow: 2px 2px 5px orange;
 }
-
-/*
-
-li>li:hover{
-background-image: linear-gradient(to right, #FFCC33 ,#FF9966);
-border-radius:20px;
-color:blue;
-
-text-shadow: 2px 2px 5px orange;
-}
-
-/*background-color:orange;*/
-
 a{
 text-decoration:none;
 }
@@ -69,6 +52,7 @@ background-image: linear-gradient(to right, #FFCC33 ,#FF9966);
 padding:0px 0px 0px 0px;
 color:blue;
 text-shadow: 2px 2px 5px orange;
+
 }
 nav{
 border:5px solid blue;
@@ -92,10 +76,6 @@ padding:0px 70px 0px 70px;
 clip-path: ellipse(95px 55px at 165px 50px);
 
 }
-/*
-clip:rect(0px, 50px, 50px, 0px);
-clip-path:circle(70% at 70% 20%);
-*/
 #x{
 right:0px; 
 top:44px;
@@ -105,15 +85,7 @@ background-color:yellow;
 }
 
 .expendable {  
-/*background: #fff;  
-color: #000;     
-line-height: 50px;  
-height: 0px; 
-
-
-*/
 border:2px solid red;
-
 overflow: hidden;  
 transition: all .5s ease-in-out;  
 border-radius:25px;
@@ -121,13 +93,6 @@ visibility:hidden;
 display:none;
 }  
 .expendable:target { 
-
-/*  background: yellow;  
-height: 50px;
-	
-display:block;
-*/
-
 visibility:visible;
 display:block;
  }
@@ -190,94 +155,62 @@ visibility:visible;
 display:block;
 }
 
-	/* 
-	(min-device-width: 600px) and (max-device-width: 600px) Force table to not be like tables anymore */
-	
 }
-
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
 </style> 
 </head>
 <body>
 
 <script>
-function dotToNav(){
-document.getElementById("movableNav").style.display="block";
-//document.getElementById("x").style.right="0px";
-document.getElementById("dot0").style.display="none";
-}
-function navToDot(){
-document.getElementById("dot0").style.display="block";
-document.getElementById("movableNav").style.display="none";
+function expandUpDown(){
+var class1=document.getElementsByClassName("expand");
+
+  if(class1[0].style.display==="block"){
+  class1[0].style.display="none";
+  class1[1].style.display="none";
+  document.getElementById("uparrow").style.display="none";
+  document.getElementById("downarrow").style.display="block";
+  }else{
+  class1[0].style.display="block";
+  class1[1].style.display="block";
+  document.getElementById("uparrow").style.display="block";
+  document.getElementById("downarrow").style.display="none";
+  }
 
 }
 </script>
 
 <header>
     <hgroup style="background-image:linear-gradient(to right, #FFCC33 ,#FF9966); text-shadow: 4px 5px 10px yellow; text-align:center;">
+    <div id="expand1" class="expand">
+    <img src="downloadLICHD.png" alt="LIC logo"  width="150px" height="300px" class="center" />
+
+    </div>
         <h1>Shatrughna Jha</h1>
+        <div id="expand2" class="expand">
+        <strong>B.Com(Hons.)</strong>
         <h2>
-        Chief Insurance advisor<br /></h2>
+        Chief Insurance advisor(Z.M. Club Member)<br /></h2>
        	<strong>Agency Code</strong>:10010120<br />
         <strong>Branch Code</strong>:120<br />
         <strong>Branch Address</strong>:<br />
         <em>Life Insurance Corporation Of India</em>, F-41, <br />F-Block, Inner Circle, Rajiv Chowk, Block F, <br />New Delhi,    		Delhi-110001<br />
-
-      
+        <em>Contact Me through shatrughnajha.sj@gmail.com</em>
+        </div>
+        <span  id="downarrow" style="cursor:pointer;  display:none;" class="fas fa-angle-down" onclick="expandUpDown()"></span>
+      <span  id="uparrow" style="cursor:pointer; display:block;" class="fas fa-angle-up" onclick="expandUpDown()"></span>
     </hgroup>
 </header>
 <span id="dot0"  style="background:url('') no-repeat fixed right; float:right;display:block;">
 <img src="downloadLICHD.png" alt="LIC logo" style="float:right;display:block; position:fixed; top:160px; right:8px;" width="45px" height="75px" />
-
-<!--downloadLIC.png
-onclick="dotToNav()"
-<span id="dot1" class="dot" style="border:4px solid orange;right:6px;top:30px;position:fixed;float:right;display:block;border-radius:50px;"></span>
-<span id="dot2" class="dot" style="border:4px solid orange;right:18px;top:30px;position:fixed;float:right;display:block;border-radius:50px;"></span>
-<span id="dot3" class="dot" style="border:4px solid white;right:30px;top:30px;position:fixed;float:right;display:block;border-radius:50px;"></span>
-<span id="dot4" class="dot" style="border:4px solid blue;right:42px;top:30px;position:fixed;float:right;display:block;border-radius:50px;"></span>
-<span id="dot5" class="dot" style="border:4px solid white;right:6px;top:40px;position:fixed;float:right;display:block;border-radius:50px;"></span>
-<span id="dot6" class="dot" style="border:4px solid orange;right:18px;top:40px;position:fixed;float:right;display:block;border-radius:50px;"></span>
-<span id="dot7" class="dot" style="border:4px solid white;right:30px;top:40px;position:fixed;float:right;display:block;border-radius:50px;"></span>
-<span id="dot8" class="dot" style="border:4px solid blue;right:42px;top:40px;position:fixed;float:right;display:block;border-radius:50px;"></span>
-<span id="dot9" class="dot" style="border:4px solid orange;right:6px;top:50px;position:fixed;float:right;display:block;border-radius:50px;"></span>
-<span id="dot10" class="dot" style="border:4px solid orange;right:18px;top:50px;position:fixed;float:right;display:block;border-radius:50px;"></span>
-<span id="dot11" class="dot" style="border:4px solid white;right:30px;top:50px;position:fixed;float:right;display:block;border-radius:50px;"></span>
-<span id="dot12" class="dot" style="border:4px solid blue;right:42px;top:50px;position:fixed;float:right;display:block;border-radius:50px;"></span>
-<span id="dot13" class="dot" style="border:4px solid blue;right:6px;top:60px;position:fixed;float:right;display:block;border-radius:50px;"></span>
-<span id="dot14" class="dot" style="border:4px solid blue;right:18px;top:60px;position:fixed;float:right;display:block;border-radius:50px;"></span>
-<span id="dot15" class="dot" style="border:4px solid blue;right:30px;top:60px;position:fixed;float:right;display:block;border-radius:50px;"></span>
-<span id="dot16" class="dot" style="border:4px solid blue;right:42px;top:60px;position:fixed;float:right;display:block;border-radius:50px;"></span>  
--->
 </span>
-<!--
-<nav id="movableNav">
-
-<span id="x" onclick=navToDot()>X</span>
-<div id="agentPhoto">
-             <img src="images/Naruto.jpeg" width="130" height="130" />
-           </div>
-    <ul>
-      	<li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#faqs">FAQs</a></li>
-       	<li><a href="#blogs">My Blogs</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-        </ul>
-</nav>
--->
-<!--
-"background:lightblue url('images/application-clinic-device-1289902.jpg') no-repeat fixed center; color:black;"
-
--->
 <article id="about" style="background-image: linear-gradient(to right, lightblue ,white);" >
-
-<header>
-       <!--  <time datetime="2010-01-12" pubdate> 
-            <span>Jan</span> 12
-        </time>
-       <a href="#" title="Link to this post"
-rel="bookmark">Article Heading</a>
-      
-       -->
+<header style="border-radius:25px;padding-left:10px;">
         <h2>
         <a href="#aboutLIC">
         About LIC
@@ -311,7 +244,7 @@ rel="bookmark">Article Heading</a>
     </ol>
     </span>
     <section>
-        <header>
+        <header  style="border-radius:25px;padding-left:10px;">
             <h2>
             <a href="#whyLIC">
             Why choose LIC?
@@ -323,7 +256,6 @@ rel="bookmark">Article Heading</a>
         <ol>
                         <li>
                         To get sum assured certainly, at the time of maturity
-                        <!-- , or some documents related works for which one needs to visit LIC office, but you don't.-->
                         </li>
                         <li>
 			A government organization, so you can trust it
@@ -354,25 +286,11 @@ rel="bookmark">Article Heading</a>
                        	<li>
                         To get loan against policy, at right time
                         </li>
-                       <!-- 
-                       <li>
-To get advise from someone like me, with 12 years of experience in this field and have been serving more than 1000 policyholders,  who can also be your insurance advisor to equip you with right policy plans according to your needs, financial conditions, size of family, marrital status, age of children(if any) so that the policy would secure their education too and have education loan against policy(if needed in future), whether you may require the money in future, so that, accordingly, the right policy with laon against policy or having terms and conditions like maturity duration in your favour.
-                        </li>
-
-
--->
                       </ol>
 		</span>
     </section>
  
-    <header>
-       <!--  <time datetime="2010-01-12" pubdate> 
-            <span>Jan</span> 12
-        </time>
-       <a href="#" title="Link to this post"
-rel="bookmark">Article Heading</a>
-      
-       -->
+    <header  style="border-radius:25px;padding-left:10px;">
         <h2>
         <a href="#aboutMe">
         About Me
@@ -392,7 +310,7 @@ rel="bookmark">Article Heading</a>
     </span>
     </p>
     <section>
-        <header>
+        <header  style="border-radius:25px;padding-left:10px;">
             <h2>
             <a href="#whyMe">	
             Why choose me?
@@ -406,42 +324,17 @@ rel="bookmark">Article Heading</a>
                         To get help in choosing best policy plan according to your needs and financial conditions from an authorised and experienced agent of LIC of India.
                         </li>
                         <li>To get help regarding premium payment reminder 
-                        <!-- , or some documents related works for which one needs to visit LIC office, but you don't.-->
                         </li>
                         <li>
 To avail all the services you deserve from LIC  at <em> right time </em>like claim payment, maturity payment,loan against policy etc. 
                         </li>
-                       <!-- 
-                       <li>
-To get advise from someone like me, with 12 years of experience in this field and have been serving more than 1000 policyholders,  who can also be your insurance advisor to equip you with right policy plans according to your needs, financial conditions, size of family, marrital status, age of children(if any) so that the policy would secure their education too and have education loan against policy(if needed in future), whether you may require the money in future, so that, accordingly, the right policy with laon against policy or having terms and conditions like maturity duration in your favour.
-                        </li>
-
-
--->
         </ol>
 	</span>
     </section>
 
 </article>
-
- <!-- article service start           
- 
- style="background-image: linear-gradient(to right, lightblue ,white);"
- 
- style="background:lightblue url('images/blur-book-business-237756.jpg') no-repeat fixed top; "
-      -->
-
-
-
 <article id="services"  style="background-image: linear-gradient(to right, lightblue ,white);">
-    <header>
-       <!--  <time datetime="2010-01-12" pubdate> 
-            <span>Jan</span> 12
-        </time>
-       <a href="#" title="Link to this post"
-rel="bookmark">Article Heading</a>
-      
-       -->
+    <header  style="border-radius:25px;padding-left:10px;">
         <h1>
        <a href="#myServices">
         Services
@@ -483,7 +376,6 @@ rel="bookmark">Article Heading</a>
                         	  </li>
                         	  <li>
                         	  <em>PAN</em>-linking, or <em>adhaar</em>-linking,
-                        	  <!--  any other <em>document submission</em> or linking work. -->
                         	  </li>
                         	  <li>
                         	  <em>Premium Payment</em>(only through <em>cheques</em>, in favor of <em>LIC of India</em>)
@@ -498,20 +390,11 @@ rel="bookmark">Article Heading</a>
                         	  
                         	  
                         	</ol>
-                        <!-- , or some documents related works for which one needs to visit LIC office, but you don't.-->
+
                         </li>
                         <li>
 			I'll be there with you always.
 			</li>
-                       <!-- 
-                       <li>
-To get advise from someone like me, with 12 years of experience in this field and have been serving more than 1000 policyholders,  who can also be your insurance advisor to equip you with right policy plans according to your needs, financial conditions, size of family, marrital status, age of children(if any) so that the policy would secure their education too and have education loan against policy(if needed in future), whether you may require the money in future, so that, accordingly, the right policy with laon against policy or having terms and conditions like maturity duration in your favour.
-                        </li>
-
-
-abc-accomplished-alphabet-48898.jpg
-
--->
                       </ol>
 </span>
     </section>
@@ -519,20 +402,7 @@ abc-accomplished-alphabet-48898.jpg
 
 
 <article id="blogs" style="background-image: linear-gradient(to right, lightblue ,white);" >
-    <header>
-       <!--  
-        style="background-image: linear-gradient(to right, lightblue ,white);"
-       style="background:lightblue url('images/abc-accomplished-alphabet-48898.jpg') no-repeat fixed center; "
-       
-       
-       
-       <time datetime="2010-01-12" pubdate> 
-            <span>Jan</span> 12
-        </time>
-       <a href="#" title="Link to this post"
-rel="bookmark">Article Heading</a>
-      
-       -->
+    <header  style="border-radius:25px;padding-left:10px;">
         <h1>
         <a href="#myBlogs">
         My Blogs
@@ -547,7 +417,7 @@ rel="bookmark">Article Heading</a>
         </header>
         <ul>
         <li><strong>A.S.A.</strong>: Actual Sum Assured</li>
-        <!--<li><strong>C.I.R.</strong>: This rider covers major illnesses by paying a reasonable extra premium.</li>-->
+        <li><strong>C.I.R.</strong>: This rider covers major illnesses by paying a reasonable extra premium.</li>
         <li><strong>D.O.C.</strong>: Date Of Commencement</li>
         <li><strong>D.G.H.</strong>: Declaration of Good Health</li>
         <li><strong>D.O.</strong>: Development Officer</li>
@@ -610,67 +480,7 @@ rel="bookmark">Article Heading</a>
 	    	  <td>Income > Rs.10,00,000</td>
 	    	  <td>30%</td>
 	    </tr>
-	   
-    	    
-           <!-- 
-             <tr>
-    
-  		  <th>Income Slabs</th>
-  		  <th>Tax Rates</th>
-  	    </tr>
-  	    <tr>
-    		  <td >Individual & HUF with age&lt;60</td>
-    		  <td rowspan="3" style="height:70px;"></td>
-    		  
-   	    </tr>
-    	    <tr>  <td>Individual with 60<=age<=80 </td>
-    	    </tr>
-    	    <tr>  <td >Individual with age>80</td>
-    		  
-    
-  	    </tr>
-	    <tr>
-	    	  <td>Income <=Rs.2,50,000</td>
-	    	  <td rowspan="3">NIL</td>
-	    </tr>
-	    <tr>  <td>Income <=Rs.3,00,000</td>
-	    </tr>
-	    <tr>  <td>Income <=Rs.5,00,000</td>
-	    	  
-	    </tr>
-	    <tr>
-	    	  <td>Rs.2,50,001 to Rs.5,00,000</td>
-	    	  <td rowspan="3">5%</td>
-	    </tr> 
-	    <tr>  <td>Rs.3,00,001 to Rs.5,00,000</td>
-	    </tr> 
-	    <tr>  <td>-</td>
-	    	  
-	    </tr>
-	    <tr>
-	    	  <td>Rs.5,00,001 to Rs.10,00,000</td>
-	    	  <td rowspan="3">20%</td>
-	    </tr>
-	    <tr>  <td>Rs.5,00,001 to Rs.10,00,000</td>
-	    </tr>
-	    <tr>  <td>Rs.5,00,001 to Rs.10,00,000</td>
-	    	  
-	    </tr>
-	    <tr>
-	    	  <td>Income > Rs.10,00,000</td>
-	    	  <td rowspan="3">30%</td>
-	    </tr>
-	    <tr>  <td>Income > Rs.10,00,000</td>
-	    </tr> <td>Income > Rs.10,00,000</td>
-	    	  
-	    </tr>
-	
-    	    ///////////////////////
-        
-          
-        
-            -->
-        </table>
+	 </table>
         <table id="forMobile">
         <tr>
     
@@ -923,8 +733,10 @@ rel="bookmark">Article Heading</a>
         </span>
     </section>
 </article>
-  <article id="contactMe"  style="background-image: linear-gradient(to right, lightblue ,white);">
-    <header>
+  
+ 
+<article id="contactMe"  style="background-image: linear-gradient(to right, lightblue ,white);">
+    <header  style="border-radius:25px;padding-left:10px;">
         <h1>
        <a href="#sendMeMail">
         Contact Me
@@ -955,28 +767,15 @@ rel="bookmark">Article Heading</a>
                  <li>If needed, then I'll also provide my personal contact through mail.</li>      
                  <li>Only receive call from that number only not another in my disguise. </li>
                       
-                      
         </ol>
         
 </span>
     </section>
 </article>
 
-
- 
- 
 <footer style="background-image: linear-gradient(to right, #006699 ,#0066CC); color:yellow;text-align:center;">
     <p>&copy; 2018 Shatrughna Jha Agency<br /> All rights regarding designing and layout are reserved.<br /> Powered by 
     <strong style="text-shadow: 2px 2px 5px orange;">Team-<em>N</em>il<em>S</em>ha</strong></p>
 </footer>
-
-<!--
-<p>pangram, or holoalphabetic sentence, includes every letter of the alphabet at least once. The most challenging pangrams are the ones with the fewest letters. Here are a few of the best.: </p><p>The five boxing wizards jump quickly.Five quacking zephyrs jolt my wax bed.The quick brown fox jumps over the lazy dog.Jinxed wizards pluck ivy from the big quilt.Crazy Fredrick bought many very exquisite opal jewels.We promptly judged antique ivory buckles for the next prize.A mad boxer shot a quick, gloved jab to the jaw of his dizzy opponent.Jaded zombies acted quaintly but kept driving their oxen forward.The job requires extra pluck and zeal from every young wage earner.</p>
--->
-
-
 </body>
-
-
-
 </html>
