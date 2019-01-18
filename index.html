@@ -13,11 +13,20 @@ Your Personal Insurance Advisor
 <style>
 media only screen and (max-width: 768px) {
     /* For mobile phones: */
-
 hgroup{
 background-size:20%;
-
 }
+}
+
+hgroup{
+/*background-size:20%; */
+margin:3% 25% 3% 25%;
+width:50%;
+background-color:rgb(255,253,255,0.4);
+text-align:center;
+font-size:120%;
+text-shadow: 4px 5px 10px orange; 
+color:blue;
 
 }
 body{
@@ -163,6 +172,7 @@ display:block;
   margin-right: auto;
   width: 20%;
 }
+
 </style> 
 </head>
 <body>
@@ -186,8 +196,9 @@ var class1=document.getElementsByClassName("expand");
 }
 </script>
 
-<header><!-- #FFCC33 ,#FF9966-->
-    <hgroup style="background-image:linear-gradient(to right, #FFCC33 ,#FF9966); text-shadow: 4px 5px 10px yellow; text-align:center;">
+<header><!-- #FFCC33 ,#FF9966 background-image:linear-gradient(to bottom, #FFCC33 ,#FF9966);-->
+<span id="transparentSpan">
+    <hgroup>
     <div id="expand1" class="expand">
     <img src="downloadLICHD.png" alt="LIC logo"  width="150px" height="300px" class="center" />
 
@@ -206,6 +217,7 @@ var class1=document.getElementsByClassName("expand");
         <span  id="downarrow" style="cursor:pointer;  display:none;" class="fas fa-angle-down" onclick="expandUpDown()"></span>
       <span  id="uparrow" style="cursor:pointer; display:block;" class="fas fa-angle-up" onclick="expandUpDown()"></span>
     </hgroup>
+</span>
 </header>
 <span id="dot0"  style="background:url('') no-repeat fixed right; float:right;display:block;">
 <img src="downloadLICHD.png" alt="LIC logo" style="float:right;display:block; position:fixed; top:160px; right:8px;" width="45px" height="75px" />
