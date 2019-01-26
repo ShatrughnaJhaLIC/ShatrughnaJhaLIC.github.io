@@ -103,19 +103,6 @@ border-radius:50px;
 background-color:yellow;
 
 }
-
-.expendable {  
-border:2px solid red;
-overflow: hidden;  
-transition: all .5s ease-in-out;  
-border-radius:25px;
-visibility:hidden;
-display:none;
-}  
-.expendable:target { 
-visibility:visible;
-display:block;
- }
  img
 {
     max-width: 50%;
@@ -182,31 +169,60 @@ display:block;
   margin-right: auto;
   width: 20%;
 }
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 
 </style> 
 </head>
 <body>
 
-<script>
-function expandUpDown(){
-var class1=document.getElementsByClassName("expand");
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#blogs">Blogs</a>
+  <a href="#contactMe">Contact</a>
+</div>
 
-  if(class1[0].style.display==="block"){
-  class1[0].style.display="none";
-  class1[1].style.display="none";
-  document.getElementById("uparrow").style.display="none";
-  document.getElementById("downarrow").style.display="block";
-  }else{
-  class1[0].style.display="block";
-  class1[1].style.display="block";
-  document.getElementById("uparrow").style.display="block";
-  document.getElementById("downarrow").style.display="none";
-  }
+<span style="font-size:30px;cursor:pointer;  float:left;display:block; position:fixed; top:160px; left:8px; border-radius:24px;background-color:rgb(255, 171, 64,0.7);" width="45px" height="75px" onclick="openNav()">&#9776; </span>
 
-}
-</script>
-
-<header><!-- #FFCC33 ,#FF9966 background-image:linear-gradient(to bottom, #FFCC33 ,#FF9966);-->
+<header><!-- #FFCC33 ,#FF9966 background-image:linear-gradient(to bottom, #FFCC33 ,#FF9966); rgb(255, 171, 64)-->
 <span id="transparentSpan">
     <hgroup>
     <div id="expand1" class="expand">
@@ -236,7 +252,11 @@ var class1=document.getElementsByClassName("expand");
 <header> 
         <h2>
         <a href="#aboutLIC">
-        <span style="background-image:linear-gradient(to right, #FFF59D, #FFFDE7); border-radius:20px;">
+        <span style="margin:auto;
+font-size:100%;
+color:blue;
+margin-left:2%;
+ border-radius:20px;">
         About LIC
         </span>
         </a>
@@ -272,7 +292,11 @@ var class1=document.getElementsByClassName("expand");
         <header>
             <h2>
             <a href="#whyLIC">
-            <span style="background-image:linear-gradient(to right, #FFF59D, #FFFDE7); border-radius:20px;">
+            <span style="margin:auto;
+font-size:100%;
+color:blue;
+margin-left:2%;
+ border-radius:20px;">
             Why choose LIC?
             </span>
             </a>
@@ -320,7 +344,11 @@ var class1=document.getElementsByClassName("expand");
     <header>
         <h2>
         <a href="#aboutMe">
-        <span style="background-image:linear-gradient(to right, #FFF59D, #FFFDE7); border-radius:20px;">
+        <span style="margin:auto;
+font-size:100%;
+color:blue;
+margin-left:2%;
+ border-radius:20px;">
         About Me
         </span>
         </a>
@@ -342,7 +370,11 @@ var class1=document.getElementsByClassName("expand");
         <header>
             <h2>
             <a href="#whyMe">	
-            <span style="background-image:linear-gradient(to right, #FFF59D, #FFFDE7); border-radius:20px;">
+            <span style="margin:auto;
+font-size:100%;
+color:blue;
+margin-left:2%;
+ border-radius:20px;">
             Why choose me?
             </span>
             </a>
@@ -368,7 +400,11 @@ To avail all the services you deserve from LIC  at <em> right time </em>like cla
     <header>
         <h1>
        <a href="#myServices">
-       <span style="background-image:linear-gradient(to right, #FFF59D, #FFFDE7); border-radius:20px;">
+       <span style="margin:auto;
+font-size:100%;
+color:blue;
+margin-left:2%;
+ border-radius:20px;">
         Services
         </span>
         </a>
@@ -438,7 +474,11 @@ To avail all the services you deserve from LIC  at <em> right time </em>like cla
     <header>
         <h1>
         <a href="#myBlogs">
-        <span style="background-image:linear-gradient(to right, #FFF59D, #FFFDE7); border-radius:20px;">
+        <span style="margin:auto;
+font-size:100%;
+color:blue;
+margin-left:2%;
+ border-radius:20px;">
         My Blogs
         </span>
         </a>
@@ -774,7 +814,11 @@ To avail all the services you deserve from LIC  at <em> right time </em>like cla
     <header>
         <h1>
        <a href="#sendMeMail">
-        <span style="background-image:linear-gradient(to right, #FFF59D, #FFFDE7); border-radius:20px;">
+        <span style="margin:auto;
+font-size:100%;
+color:blue;
+margin-left:2%;
+ border-radius:20px;">
         Contact Me
         </span>
         </a>
@@ -808,11 +852,42 @@ To avail all the services you deserve from LIC  at <em> right time </em>like cla
         
 </span>
     </section>
+    <a href="#about"><span  id="uparrow" style="cursor:pointer; display:block; text-align:center;" class="fas fa-angle-up"></span></a>
 </article>
 
-<footer style="background-image: linear-gradient(to right, #006699 ,#0066CC); color:yellow;text-align:center;">
+<footer style="background-image: linear-gradient(to right, #006699 ,#0066CC); color:yellow;text-align:center; border-radius:50%;">
     <p>&copy; 2018 Shatrughna Jha Agency<br /> All rights regarding designing and layout are reserved.<br /> Powered by 
     <strong style="text-shadow: 2px 2px 5px orange;">Team-Roxx</strong></p>
 </footer>
+
+<script>
+function expandUpDown(){
+var class1=document.getElementsByClassName("expand");
+
+  if(class1[0].style.display==="block"){
+  class1[0].style.display="none";
+  class1[1].style.display="none";
+  document.getElementById("uparrow").style.display="none";
+  document.getElementById("downarrow").style.display="block";
+  }else{
+  class1[0].style.display="block";
+  class1[1].style.display="block";
+  document.getElementById("uparrow").style.display="block";
+  document.getElementById("downarrow").style.display="none";
+  }
+
+
+}
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "50%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+</script>
+
 </body>
 </html>
